@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #005fa3; /* Rich blue background */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+  font-size: 2.4rem; /* Larger text for visibility */
+  font-weight: 900; /* Ultra bold for maximum emphasis */
+  color: #ffffff; /* Bright white for strong contrast */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Shadow for extra visibility */
+  text-transform: uppercase; /* Professional appearance */
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: inherit; /* Ensures it inherits the white color */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff; /* Bright white text */
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+  color: #fdfdfd; /* Slightly brighter on hover */
+}
+
+.nav-link:active {
+  color: #ffd700; /* Add a gold color when active */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+}
